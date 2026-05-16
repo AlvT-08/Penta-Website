@@ -9,23 +9,87 @@
 </head>
 <body>
 
-<header class="nav-bar">
-    <div class="logo">
-        <a href="index.html">
-            <img src="assets/logo.png" alt="Penta logo">
-        </a>
+<header class="nav-bar" id="navbar">
+    <div class="nav-top">
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/logo.png" alt="Penta logo">
+            </a>
+        </div>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li class="nav-item has-dropdown">
+                    <a href="index.html">Homepage</a>
+                    <button class="dropdown-toggle" data-target="menu-home">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="6 9 12 15 18 9"/>
+                        </svg>
+                    </button>
+                </li>
+                <li class="nav-item has-dropdown">
+                    <a href="about.html">About Us</a>
+                    <button class="dropdown-toggle" data-target="menu-about">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="6 9 12 15 18 9"/>
+                        </svg>
+                    </button>
+                </li>
+                <li class="nav-item has-dropdown">
+                    <a href="products.html">Products</a>
+                    <button class="dropdown-toggle" data-target="menu-products">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="6 9 12 15 18 9"/>
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+        <button type="button" id="contactBtn">Contact Us</button>
     </div>
-    <nav class="main-nav">
-        <ul class="nav-list">
-            <li><a href="index.html">Homepage</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="about.html">About Us</a></li>
-        </ul>
-    </nav>
-    <button type="button">Contact Us</button>
+
+    <div class="mega-menu" id="menu-home">
+        <div class="mega-col">
+            <p class="mega-label">Company</p>
+            <a href="index.html#hero">Company Logo</a>
+            <a href="index.html#brands">Brand / Product Logo</a>
+            <a href="index.html#contact">Office Address / Tel / Email</a>
+        </div>
+    </div>
+
+    <div class="mega-menu" id="menu-about">
+        <div class="mega-col">
+            <p class="mega-label">About Us</p>
+            <a href="about.html#mission">Mission / Vision</a>
+            <a href="about.html#history">Company Brief History</a>
+        </div>
+    </div>
+
+    <div class="mega-menu" id="menu-products">
+        <div class="mega-col">
+            <p class="mega-label">Pumps</p>
+            <a href="products.html#paco">PACO</a>
+            <a href="products.html#grundfos">Grundfos</a>
+            <a href="products.html#fairbanks">Fairbanks Nijhuis</a>
+            <a href="products.html#eim">EIM</a>
+        </div>
+        <div class="mega-col">
+            <p class="mega-label">Cooling</p>
+            <a href="products.html#Cooling">Cooling Tower</a>
+            <a href="products.html#Ccooler">Closed Circuit Cooler</a>
+            <a href="products.html#Evaporative">Evaporative Condenser</a>
+        </div>
+        <div class="mega-col">
+            <p class="mega-label">Systems</p>
+            <a href="products.html#Gasketed">Gasketed Plate Heat Exchanger</a>
+            <a href="products.html#Separators">Air Separator</a>
+            <a href="products.html#Expansion">Expansion Tank</a>
+            <a href="products.html#Balance">Balancing Valve</a>
+            <a href="products.html#Pressure">Package Pressurization System</a>
+        </div>
+    </div>
 </header>
 
-<section class="hero">
+<section class="hero" id="hero">
   <video autoplay muted loop playsinline>
     <source src="assets/hero.mp4" type="video/mp4">
   </video>
@@ -36,27 +100,28 @@
 <section class="what">
     <div class="gradient-wrapper">
         <br><br><br><br>
-        <p class="fade-up">What we do</p>
-        <h1 class="fade-up">PLACEHOLDER</h1>
-        <p class="fade-up">Learn More <button class="view-button" aria-label="View Details"></button></p>
+        <h1 class="fade-up">What we do</h1>
         <div class="boxes-container">
             <div class="box-wrapper">
-                <div class="icon"></div>
-                <h2>Sample</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <button class="view-button" aria-label="View Details"></button>
+                <div class="icon"><img src="assets/sales.png"></div>
+                <h2>Sales, Distribution, and Technical Support </h2>
+                <p>
+                • Centrifugal Pump for plumbing & sanitary, fire protection system, and Hydronic System. <br>
+                • Cooling Tower, Closed Circuit Cooler, Condeser.<br>
+                • Gasketed Plate Heat Exchanger.<br>
+                • Air Separator & Expansion Tank.<br>
+                • Package Pressurization System.<br>
+                • Controller, Varible Frequency Drive, Soft Starter.</p>
             </div>
             <div class="box-wrapper">
-                <div class="icon"></div>
-                <h2>Sample</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <button class="view-button" aria-label="View Details"></button>
+                <div class="icon"><img src="assets/prevent.png"></div>
+                <h2>Preventive Maintenance Service (PMS)</h2>
+                <p>Preventive Maintenance Service (PMS) is a structured program designed to optimize performance, extend asset life, and eliminate unexpected downtime.</p>
             </div>
             <div class="box-wrapper">
-                <div class="icon"></div>
-                <h2>Sample</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <button class="view-button" aria-label="View Details"></button>
+                <div class="icon"><img src="assets/repair.png"></div>
+                <h2>Servicing and Repair Works</h2>
+                <p>To keep your operations running smoothly. Our highly skilled technicians provide on-site field services and bench repairs for a wide range of centrifugal pumps and controllers.</p>
             </div>
         </div>
     </div>
@@ -64,97 +129,111 @@
 
 <section class="transition"></section>
 
-<section class="brands-section">
+<section class="brands-section" id="brands">
     <br><br><br><br><br><br>
     <h1 class="fade-up">Brands We<br>Work With</h1>
     <div class="brands-slider-wrapper">
         <div class="brands-container">
             <div class="brand-wrapper">
-                <img src="assets/paco.png" alt="Brand 1">
+                <img src="assets/paco.png" alt="Paco">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 <div class="brand-footer">
                     <h2>View Products</h2>
-                    <button class="view-button" aria-label="View Details"></button>
+                    <a href="products.html#paco"><button class="view-button" aria-label="View Details"></button></a>
                 </div>
             </div>
             <div class="brand-wrapper">
-                <img src="assets/alfalaval.png" alt="Brand 2">
+                <img src="assets/grundfos.png" alt="Grundfos">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 <div class="brand-footer">
                     <h2>View Products</h2>
-                    <button class="view-button" aria-label="View Details"></button>
+                    <a href="products.html#grundfos"><button class="view-button" aria-label="View Details"></button></a>   
+                </div>             
+            </div>
+            <div class="brand-wrapper">
+                <img src="assets/pentair.png" alt="Pentair">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="brand-footer">
+                    <h2>View Products</h2>
+                    <a href="products.html#fairbanks"><button class="view-button" aria-label="View Details"></button></a>      
+                </div>             
+            </div>
+            <div class="brand-wrapper">
+                <img src="assets/eim.png" alt="EIM">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="brand-footer">
+                    <h2>View Products</h2>
+                    <a href="products.html#eim"><button class="view-button" aria-label="View Details"></button></a>
+                </div>             
+            </div>
+            <div class="brand-wrapper">
+                <img src="assets/evapco.png" alt="Evapco">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="brand-footer">
+                    <h2>View Products</h2>
                 </div>
             </div>
             <div class="brand-wrapper">
-                <img src="assets/grundfos.png" alt="Brand 3">
+                <img src="assets/imi.png" alt="IMi">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 <div class="brand-footer">
                     <h2>View Products</h2>
-                    <button class="view-button" aria-label="View Details"></button>
                 </div>
             </div>
             <div class="brand-wrapper">
-                <img src="assets/pentair.png" alt="Brand 4">
+                <img src="assets/alfalaval.png" alt="Alfa Laval">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 <div class="brand-footer">
                     <h2>View Products</h2>
-                    <button class="view-button" aria-label="View Details"></button>
                 </div>
             </div>
             <div class="brand-wrapper">
-                <img src="assets/evapco.png" alt="Brand 5">
+                <img src="assets/amtrol.png" alt="Amtrol">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 <div class="brand-footer">
                     <h2>View Products</h2>
-                    <button class="view-button" aria-label="View Details"></button>
                 </div>
             </div>
             <div class="brand-wrapper">
-                <img src="assets/imi.png" alt="Brand 6">
+                <img src="assets/nema.png" alt="Nema">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 <div class="brand-footer">
                     <h2>View Products</h2>
-                    <button class="view-button" aria-label="View Details"></button>
                 </div>
             </div>
             <div class="brand-wrapper">
-                <img src="assets/eim.png" alt="Brand 7">
+                <img src="assets/danfoss.png" alt="Danfoss">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 <div class="brand-footer">
                     <h2>View Products</h2>
-                    <button class="view-button" aria-label="View Details"></button>
                 </div>
             </div>
             <div class="brand-wrapper">
-                <img src="assets/amtrol.png" alt="Brand 8">
+                <img src="assets/ab.png" alt="AB">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 <div class="brand-footer">
                     <h2>View Products</h2>
-                    <button class="view-button" aria-label="View Details"></button>
                 </div>
             </div>
             <div class="brand-wrapper">
-                <img src="assets/nema.png" alt="Brand 9">
+                <img src="assets/ls.png" alt="LS">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 <div class="brand-footer">
                     <h2>View Products</h2>
-                    <button class="view-button" aria-label="View Details"></button>
                 </div>
             </div>
             <div class="brand-wrapper">
-                <img src="assets/danfoss.png" alt="Brand 10">
+                <img src="assets/eaton.png" alt="Eaton">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 <div class="brand-footer">
                     <h2>View Products</h2>
-                    <button class="view-button" aria-label="View Details"></button>
                 </div>
             </div>
             <div class="brand-wrapper">
-                <img src="assets/ab.png" alt="Brand 11">
+                <img src="assets/tornatech.png" alt="Tornatech">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 <div class="brand-footer">
                     <h2>View Products</h2>
-                    <button class="view-button" aria-label="View Details"></button>
                 </div>
             </div>
         </div>
@@ -173,17 +252,75 @@
     </div>
 </section>
 
-<section class="cta">
+<section class="cta" id="contact">
     <div class="cta-content">
         <h1>Contact Us Now!</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>Contact our team today for a dependable fluid handling system.</p>
         <div class="cta-buttons">
-            <button>Email us!</button>
-            <button>Call us!</button>
+            <button onclick="document.getElementById('contactOverlay').classList.add('open')">Where to find us?</button>
         </div>
     </div>
     <img class="cta-image" src="assets/pump.png" alt="pump">
 </section>
+
+<div class="contact-overlay" id="contactOverlay">
+  <div class="contact-popup">
+    <button class="close-btn" id="closeContact" aria-label="Close">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round">
+        <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+      </svg>
+    </button>
+
+    <p class="popup-label">Reach us</p>
+    <h2 class="popup-title">Contact us</h2>
+
+    <div class="map-slot">
+      <img src="assets/map.png" alt="Office location map">
+    </div>
+
+    <div class="contact-row">
+      <div class="icon-wrap">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#07669e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      </div>
+      <div class="row-text">
+        <span class="row-label">Address</span>
+        <span class="row-value">699 Jose Abad Santos Street Little Baguio, San Juan City 1500 Philippines</span>
+      </div>
+    </div>
+
+    <div class="contact-row">
+      <div class="icon-wrap">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#07669e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.07 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3 1.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      </div>
+      <div class="row-text">
+        <span class="row-label">Phone</span>
+        <span class="row-value"><a href="tel:+63287228260">Trunkline: +63 2 8722 8260</a></span>
+        <span class="row-value"><a href="tel:+639176270875">Mobile: +63 917 627 0875</a></span>
+      </div>
+    </div>
+
+    <div class="contact-row">
+      <div class="icon-wrap">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#07669e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      </div>
+      <div class="row-text">
+        <span class="row-label">Email</span>
+        <span class="row-value"><a href="mailto:penta.eng@yahoo.com">penta.eng@yahoo.com</a></span>
+      </div>
+    </div>
+
+    <div class="contact-row">
+      <div class="icon-wrap">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#07669e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+      </div>
+      <div class="row-text">
+        <span class="row-label">Website</span>
+        <span class="row-value"><a href="#">www.pentaengineering.ph</a></span>
+      </div>
+    </div>
+
+  </div>
+</div>
 
 <footer>
     <div class="footer-wrap">
@@ -209,10 +346,9 @@
         </ul>
         <ul class="footer-nav">
             <li><h2>Contact Us</h2></li>
-            <li><a href="#">Email</a></li>
-            <li><a href="#">Phone Number</a></li>
-            <li><a href="#">Consultants</a></li>
-            <li><a href="#">Address</a></li>
+            <li><a href="#" onclick="document.getElementById('contactOverlay').classList.add('open'); return false;">Email</a></li>
+            <li><a href="#" onclick="document.getElementById('contactOverlay').classList.add('open'); return false;">Phone Number</a></li>
+            <li><a href="#" onclick="document.getElementById('contactOverlay').classList.add('open'); return false;">Address</a></li>
         </ul>
         <div class="footer-bottom">
             <span>Back to Top</span>
@@ -226,5 +362,6 @@
 </footer>
 
 <script src="js/slider.js" defer></script>
+<script src="js/nav.js" defer></script>
 </body>
 </html>
