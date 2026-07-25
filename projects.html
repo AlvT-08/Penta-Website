@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Penta Engineering Machineries - Prohects</title>
+    <link rel="icon" type="image/x-icon" href="assets/logo.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+   
+</head>
+<body class="projects-page">
+
+<header class="nav-bar prod-nav" id="prod-nav">
+    <div class="nav-top">
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/logo.png" alt="Penta logo">
+            </a>
+        </div>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li class="nav-item has-dropdown">
+                    <a href="index.html">Homepage</a>
+                    <button class="dropdown-toggle" data-target="menu-home">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="6 9 12 15 18 9"/>
+                        </svg>
+                    </button>
+                </li>
+                <li class="nav-item has-dropdown">
+                    <a href="about.html">About Us</a>
+                    <button class="dropdown-toggle" data-target="menu-about">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="6 9 12 15 18 9"/>
+                        </svg>
+                    </button>
+                </li>
+                <li class="nav-item has-dropdown">
+                    <a href="products.html">Products</a>
+                    <button class="dropdown-toggle" data-target="menu-products">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="6 9 12 15 18 9"/>
+                        </svg>
+                    </button>
+                </li>
+                <li class="nav-item has-dropdown">
+                    <a href="Projects.html">Projects</a>
+                    <button class="dropdown-toggle" data-target="menu-projects">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="6 9 12 15 18 9"/>
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+        <button type="button" id="contactBtn">Contact Us</button>
+        <button type="button" id="hamburgerBtn" class="hamburger-btn" aria-label="Toggle menu" aria-expanded="false">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+    </div>
+
+    <div class="mega-menu" id="menu-home">
+        <div class="mega-col">
+            <p class="mega-label">Company</p>
+            <a href="index.html#hero">Company Logo</a>
+            <a href="index.html#brands">Brands</a>
+            <a href="index.html#contact">Contact Info</a>
+        </div>
+    </div>
+
+    <div class="mega-menu" id="menu-about">
+        <div class="mega-col">
+            <p class="mega-label">About Us</p>
+            <a href="about.html#mission">Mission / Vision</a>
+            <a href="about.html#history">Company History</a>
+        </div>
+    </div>
+
+    <div class="mega-menu" id="menu-projects">
+        <div class="mega-col">
+            <p class="mega-label">Status</p>
+            <a href="projects.html#completed">Completed</a>
+            <a href="projects.html#ongoing">Ongoing</a>
+        </div>
+    </div>
+
+    <div class="mega-menu" id="menu-products">
+    <div class="mega-col">
+        <p class="mega-label">Pumps</p>
+        <a href="products.html#paco">PACO</a>
+        <a href="products.html#grundfos">Grundfos</a>
+        <a href="products.html#fairbanks">Fairbanks Nijhuis</a>
+        <a href="products.html#eim">EIM</a>
+    </div>
+
+    <div class="mega-group">
+        <p class="mega-label mega-label-wide">HVAC and Refrigeration Equipment</p>
+        <div class="mega-group-row">
+            <div class="mega-col">
+                <a href="products.html#Cooling">Cooling Tower</a>
+                <a href="products.html#Ccoolers">Closed Circuit Cooler</a>
+                <a href="products.html#Evaporative">Evaporative Condenser</a>
+            </div>
+            <div class="mega-col">
+                <a href="products.html#Gasketed">Gasketed Plate Heat Exchanger</a>
+                <a href="products.html#Separators">Air Separator</a>
+                <a href="products.html#Expansion">Expansion Tank</a>
+                <a href="products.html#Balance">Balancing Valve</a>
+                <a href="products.html#Pressure">Package Pressurization Unit</a>
+            </div>
+        </div>
+    </div>
+</div>
+</header>
+
+<div class="products-layout">
+
+<aside class="products-sidebar">
+    <h2>Our Projects</h2>
+    <div class="sidebar-section">
+        <ul class="sidebar-brands">
+            <li class="sidebar-item">
+                <a href="#completed" class="sidebar-link">Completed Projects</a>
+                <ul class="sidebar-sub">
+                    <li><a href="#8-benitez-suites">8 Benitez Suites</a></li>
+                    <li><a href="#1210-acacia-avenue">1210 Acacia Avenue</a></li>
+                    <li><a href="#activa-by-filinvest">Activa by Filinvest</a></li>
+                    <li><a href="#amaia-skies-avenida">Amaia Skies Avenida</a></li>
+                    <li><a href="#amaia-skies-sta-mesa">Amaia Skies Sta. Mesa</a></li>
+                    <li><a href="#arca-pie">Arca Pie</a></li>
+                    <li><a href="#arton-east-tower">Arton East Tower</a></li>
+                    <li><a href="#ayala-center-cebu">Ayala Center Cebu</a></li>
+                    <li><a href="#balagtas-warehouse">Balagtas Warehouse</a></li>
+                    <li><a href="#balmori-suites">Balmori Suites</a></li>
+                    <li><a href="#bdo-ortigas-tower">BDO Ortigas Tower</a></li>
+                    <li><a href="#belmont-hotel-mactan">Belmont Hotel Mactan</a></li>
+                    <li><a href="#cebu-integrated-resort-nustar-resort-cebu">Cebu Integrated Resort (Nustar Resort Cebu)</a></li>
+                    <li><a href="#century-peak">Century Peak</a></li>
+                    <li><a href="#cerca-nuveo-tower-1-3">Cerca Nuveo Tower 1 & 3</a></li>
+                    <li><a href="#cyber-sigma">Cyber Sigma</a></li>
+                    <li><a href="#cyberpark-tower-3">Cyberpark Tower 3</a></li>
+                    <li><a href="#discovery-primea">Discovery Primea</a></li>
+                    <li><a href="#dlsmhsi-academic-complex-general-academic-bldg-2">DLSMHSI Academic Complex - General Academic Bldg. 2</a></li>
+                    <li><a href="#dlsu-clean-building">DLSU Clean Building</a></li>
+                    <li><a href="#eagle-cement-bldg-rsa-bldg">Eagle Cement Bldg. & RSA Bldg.</a></li>
+                    <li><a href="#eastbay-residences-fordham-tower">Eastbay Residences Fordham Tower</a></li>
+                    <li><a href="#exchange-square">Exchange Square</a></li>
+                    <li><a href="#exxa-zeta-tower">Exxa Zeta Tower</a></li>
+                    <li><a href="#fpdi-warehouse-extension-1">FPDI Warehouse Extension 1</a></li>
+                    <li><a href="#gateway-mall-hotel">Gateway Mall & Hotel</a></li>
+                    <li><a href="#gbf-center-1-2">GBF Center 1 & 2</a></li>
+                    <li><a href="#hann-casino-resort-gaming-carpark-extension">Hann Casino Resort Gaming Carpark Extension</a></li>
+                    <li><a href="#hann-reserve-mountain-resort-clubhouse-banyan-tree">Hann Reserve Mountain Resort Clubhouse & Banyan Tree</a></li>
+                    <li><a href="#harton-corporate-center">Harton Corporate Center</a></li>
+                    <li><a href="#hi-precision-regalado">Hi-Precision Regalado</a></li>
+                    <li><a href="#hotel-101-fort">Hotel 101 Fort</a></li>
+                    <li><a href="#hss-tower-1">HSS Tower 1</a></li>
+                    <li><a href="#imperial-plaza">Imperial Plaza</a></li>
+                    <li><a href="#8-rockwell">8 Rockwell</a></li>
+                    <li><a href="#m3-corporate-center">M3 Corporate Center</a></li>
+                    <li><a href="#makati-commerce-center">Makati Commerce Center</a></li>
+                    <li><a href="#malolos-clark-railway-project">Malolos Clark Railway Project</a></li>
+                    <li><a href="#market-market">Market Market</a></li>
+                    <li><a href="#mayflower-bpo-greenfield-tower">Mayflower BPO (Greenfield Tower)</a></li>
+                    <li><a href="#mcentral-warehouse-cabuyao">MCentral Warehouse Cabuyao</a></li>
+                    <li><a href="#mcentral-warehouse-marikina">MCentral Warehouse Marikina</a></li>
+                    <li><a href="#metrojet-new-hangar">Metrojet New Hangar</a></li>
+                    <li><a href="#naia-terminal-2">NAIA Terminal 2</a></li>
+                    <li><a href="#nccc-mall-davao">NCCC Mall Davao</a></li>
+                    <li><a href="#nepo-bencab-tower">Nepo Bencab Tower</a></li>
+                    <li><a href="#new-zealand-creamery-commercial-warehouse">New Zealand Creamery - Commercial & Warehouse</a></li>
+                    <li><a href="#one-maridien">One Maridien</a></li>
+                    <li><a href="#one-proscenium">One Proscenium</a></li>
+                    <li><a href="#park-central-towers">Park Central Towers</a></li>
+                    <li><a href="#park-triangle-corporate-plaza-north-tower-falcon">Park Triangle Corporate Plaza North Tower-Falcon</a></li>
+                    <li><a href="#parqal">Parqal</a></li>
+                    <li><a href="#pps-manila-regional-office">PPS Manila Regional Office</a></li>
+                    <li><a href="#quantum-residences-tower">Quantum Residences Tower</a></li>
+                    <li><a href="#richmond-square">Richmond Square</a></li>
+                    <li><a href="#robinsons-cyber-omega">Robinsons Cyber Omega</a></li>
+                    <li><a href="#robinsons-cyberscape-gamma">Robinsons Cyberscape Gamma</a></li>
+                    <li><a href="#robinsons-magnolia-mall-expansion">Robinsons Magnolia Mall Expansion</a></li>
+                    <li><a href="#robinsons-place-manila-main-mall-midtown">Robinsons Place Manila - Main Mall & Midtown</a></li>
+                    <li><a href="#rockwell-south-at-carmelray">Rockwell South at Carmelray</a></li>
+                    <li><a href="#s-r-bacoor">S&R Bacoor</a></li>
+                    <li><a href="#s-r-baliwag">S&R Baliwag</a></li>
+                    <li><a href="#s-r-sto-tomas">S&R Sto. Tomas</a></li>
+                    <li><a href="#santolan-town-plaza">Santolan Town Plaza</a></li>
+                    <li><a href="#savya-financial-center">Savya Financial Center</a></li>
+                    <li><a href="#six-e-com-center">Six E-com Center</a></li>
+                    <li><a href="#skytech-it-park">Skytech IT Park</a></li>
+                    <li><a href="#sm-aura">SM Aura</a></li>
+                    <li><a href="#sm-keppel">SM Keppel</a></li>
+                    <li><a href="#solaire-north">Solaire North</a></li>
+                    <li><a href="#suntrust-asmara">Suntrust Asmara</a></li>
+                    <li><a href="#taft-east-gate-cebu">Taft East Gate Cebu</a></li>
+                    <li><a href="#the-big-apple">The Big Apple</a></li>
+                    <li><a href="#the-gentry">The Gentry</a></li>
+                    <li><a href="#the-proscenium">The Proscenium</a></li>
+                    <li><a href="#university-tower-5">University Tower 5</a></li>
+                    <li><a href="#zuellig-building">Zuellig Building</a></li>
+                </ul>
+            </li>
+            <li class="sidebar-item">
+                <a href="#ongoing" class="sidebar-link">Ongoing Projects</a>
+                <ul class="sidebar-sub">
+                    <li><a href="#alonzo-parksuites">Alonzo Parksuites</a></li>
+                    <li><a href="#arcovia-palazzo-altea">Arcovia Palazzo-Altea</a></li>
+                    <li><a href="#bdo-corporate-center-makati">BDO Corporate Center Makati</a></li>
+                    <li><a href="#connor">Connor</a></li>
+                    <li><a href="#dasmari-as-police-station">Dasmariñas Police Station</a></li>
+                    <li><a href="#edades-west">Edades West</a></li>
+                    <li><a href="#empress">Empress</a></li>
+                    <li><a href="#estancia-expansion">Estancia Expansion</a></li>
+                    <li><a href="#galleon-office-tower-residential-tower-podium">Galleon Office Tower, Residential Tower & Podium</a></li>
+                    <li><a href="#gh-tower">GH Tower</a></li>
+                    <li><a href="#gh-mall">GH Mall</a></li>
+                    <li><a href="#kareila-dc-calamba">Kareila DC Calamba</a></li>
+                    <li><a href="#la-salle-greenhills-senior-high-school-ib-bldg">La Salle Greenhills Senior High School + IB Bldg.</a></li>
+                    <li><a href="#laya-by-shang">Laya by Shang</a></li>
+                    <li><a href="#malolos-clark-railway-cp-n-04">Malolos Clark Railway CP N-04</a></li>
+                    <li><a href="#maple-at-verdant">Maple at Verdant</a></li>
+                    <li><a href="#moldex-residences-baguio-davos-bldg">Moldex Residences Baguio - Davos Bldg.</a></li>
+                    <li><a href="#new-senate-bldg">New Senate Bldg.</a></li>
+                    <li><a href="#oceanfront-premier-residences">Oceanfront Premier Residences</a></li>
+                    <li><a href="#pioneer-house-bgc">Pioneer House BGC</a></li>
+                    <li><a href="#pldt-makati-general-office">PLDT Makati General Office</a></li>
+                    <li><a href="#power-plant-mall-angeles-city-pampanga">Power Plant Mall - Angeles City, Pampanga</a></li>
+                    <li><a href="#primex-tower">Primex Tower</a></li>
+                    <li><a href="#robinsons-bridgetowne-mall-hotel">Robinsons Bridgetowne Mall & Hotel</a></li>
+                    <li><a href="#sierra-valley-gardens-phase-1b-tower-3-4">Sierra Valley Gardens Phase 1B: Tower 3 & 4</a></li>
+                    <li><a href="#st-luke-s-medical-center-e-rodriguez-quezon-city">St. Luke's Medical Center E. Rodriguez, Quezon City</a></li>
+                    <li><a href="#st-luke-s-medical-center-offsite-support-facility">St. Luke's Medical Center Offsite Support Facility</a></li>
+                    <li><a href="#sta-lucia-mall-ponte-verde-davao-city">Sta. Lucia Mall - Ponte Verde, Davao City</a></li>
+                    <li><a href="#supercare-medical-center">Supercare Medical Center</a></li>
+                    <li><a href="#sync-s-tower">Sync-S Tower</a></li>
+                    <li><a href="#t-one-residences">T One Residences</a></li>
+                    <li><a href="#the-belvedere-towers-1-2-3">The Belvedere Towers 1, 2 & 3</a></li>
+                    <li><a href="#the-jewel-mall-office">The Jewel Mall & Office</a></li>
+                    <li><a href="#ust-dr-william-t-belo-sta-rosa-laguna">UST Dr. William T. Belo Sta. Rosa, Laguna</a></li>
+                    <li><a href="#west-grove-hotel-bulihan-circle">West Grove Hotel-Bulihan Circle</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</aside>
+
+<main class="products-main">
+    <div class="projects-section" id="completed">
+        <h2>Completed Projects</h2>
+
+        <div class="project-card" id="8-benitez-suites">
+            <h3>1. 8 Benitez Suites</h3>
+            <img src="assets/projects/1.png" alt="8 Benitez Suites">
+        </div>
+        <div class="project-card" id="1210-acacia-avenue">
+            <h3>2. 1210 Acacia Avenue</h3>
+            <img src="assets/projects/2.png" alt="1210 Acacia Avenue">
+        </div>
+        <div class="project-card" id="activa-by-filinvest">
+            <h3>3. Activa by Filinvest</h3>
+            <img src="assets/projects/3.png" alt="Activa by Filinvest">
+        </div>
+        <div class="project-card" id="amaia-skies-avenida">
+            <h3>4. Amaia Skies Avenida</h3>
+            <img src="assets/projects/4.png" alt="Amaia Skies Avenida">
+        </div>
+        <div class="project-card" id="amaia-skies-sta-mesa">
+            <h3>5. Amaia Skies Sta. Mesa</h3>
+            <img src="assets/projects/5.png" alt="Amaia Skies Sta. Mesa">
+        </div>
+        <div class="project-card" id="arca-pie">
+            <h3>6. Arca Pie</h3>
+            <img src="assets/projects/6.png" alt="Arca Pie">
+        </div>
+        <div class="project-card" id="arton-east-tower">
+            <h3>7. Arton East Tower</h3>
+            <img src="assets/projects/7.png" alt="Arton East Tower">
+        </div>
+        <div class="project-card" id="ayala-center-cebu">
+            <h3>8. Ayala Center Cebu</h3>
+            <img src="assets/projects/8.png" alt="Ayala Center Cebu">
+        </div>
+        <div class="project-card" id="balagtas-warehouse">
+            <h3>9. Balagtas Warehouse</h3>
+            <img src="assets/projects/9.png" alt="Balagtas Warehouse">
+        </div>
+        <div class="project-card" id="balmori-suites">
+            <h3>10. Balmori Suites</h3>
+            <img src="assets/projects/10.png" alt="Balmori Suites">
+        </div>
+        <div class="project-card" id="bdo-ortigas-tower">
+            <h3>11. BDO Ortigas Tower</h3>
+            <img src="assets/projects/11.png" alt="BDO Ortigas Tower">
+        </div>
+        <div class="project-card" id="belmont-hotel-mactan">
+            <h3>12. Belmont Hotel Mactan</h3>
+            <img src="assets/projects/12.png" alt="Belmont Hotel Mactan">
+        </div>
+        <div class="project-card" id="cebu-integrated-resort-nustar-resort-cebu">
+            <h3>13. Cebu Integrated Resort (Nustar Resort Cebu)</h3>
+            <img src="assets/projects/13.png" alt="Cebu Integrated Resort (Nustar Resort Cebu)">
+        </div>
+        <div class="project-card" id="century-peak">
+            <h3>14. Century Peak</h3>
+            <img src="assets/projects/14.png" alt="Century Peak">
+        </div>
+        <div class="project-card" id="cerca-nuveo-tower-1-3">
+            <h3>15. Cerca Nuveo Tower 1 & 3</h3>
+            <img src="assets/projects/15.png" alt="Cerca Nuveo Tower 1 & 3">
+        </div>
+        <div class="project-card" id="cyber-sigma">
+            <h3>16. Cyber Sigma</h3>
+            <img src="assets/projects/16.png" alt="Cyber Sigma">
+        </div>
+        <div class="project-card" id="cyberpark-tower-3">
+            <h3>17. Cyberpark Tower 3</h3>
+            <img src="assets/projects/17.png" alt="Cyberpark Tower 3">
+        </div>
+        <div class="project-card" id="discovery-primea">
+            <h3>18. Discovery Primea</h3>
+            <img src="assets/projects/18.png" alt="Discovery Primea">
+        </div>
+        <div class="project-card" id="dlsmhsi-academic-complex-general-academic-bldg-2">
+            <h3>19. DLSMHSI Academic Complex - General Academic Bldg. 2</h3>
+            <img src="assets/projects/19.png" alt="DLSMHSI Academic Complex - General Academic Bldg. 2">
+        </div>
+        <div class="project-card" id="dlsu-clean-building">
+            <h3>20. DLSU Clean Building</h3>
+            <img src="assets/projects/20.png" alt="DLSU Clean Building">
+        </div>
+        <div class="project-card" id="eagle-cement-bldg-rsa-bldg">
+            <h3>21. Eagle Cement Bldg. & RSA Bldg.</h3>
+            <img src="assets/projects/21.png" alt="Eagle Cement Bldg. & RSA Bldg.">
+        </div>
+        <div class="project-card" id="eastbay-residences-fordham-tower">
+            <h3>22. Eastbay Residences Fordham Tower</h3>
+            <img src="assets/projects/22.png" alt="Eastbay Residences Fordham Tower">
+        </div>
+        <div class="project-card" id="exchange-square">
+            <h3>23. Exchange Square</h3>
+            <img src="assets/projects/23.png" alt="Exchange Square">
+        </div>
+        <div class="project-card" id="exxa-zeta-tower">
+            <h3>24. Exxa Zeta Tower</h3>
+            <img src="assets/projects/24.png" alt="Exxa Zeta Tower">
+        </div>
+        <div class="project-card" id="fpdi-warehouse-extension-1">
+            <h3>25. FPDI Warehouse Extension 1</h3>
+            <img src="assets/projects/25.png" alt="FPDI Warehouse Extension 1">
+        </div>
+        <div class="project-card" id="gateway-mall-hotel">
+            <h3>26. Gateway Mall & Hotel</h3>
+            <img src="assets/projects/26.png" alt="Gateway Mall & Hotel">
+        </div>
+        <div class="project-card" id="gbf-center-1-2">
+            <h3>27. GBF Center 1 & 2</h3>
+            <img src="assets/projects/27.png" alt="GBF Center 1 & 2">
+        </div>
+        <div class="project-card" id="hann-casino-resort-gaming-carpark-extension">
+            <h3>28. Hann Casino Resort Gaming Carpark Extension</h3>
+            <img src="assets/projects/28.png" alt="Hann Casino Resort Gaming Carpark Extension">
+        </div>
+        <div class="project-card" id="hann-reserve-mountain-resort-clubhouse-banyan-tree">
+            <h3>29. Hann Reserve Mountain Resort Clubhouse & Banyan Tree</h3>
+            <img src="assets/projects/29.png" alt="Hann Reserve Mountain Resort Clubhouse & Banyan Tree">
+        </div>
+        <div class="project-card" id="harton-corporate-center">
+            <h3>30. Harton Corporate Center</h3>
+            <img src="assets/projects/30.png" alt="Harton Corporate Center">
+        </div>
+        <div class="project-card" id="hi-precision-regalado">
+            <h3>31. Hi-Precision Regalado</h3>
+            <img src="assets/projects/31.png" alt="Hi-Precision Regalado">
+        </div>
+        <div class="project-card" id="hotel-101-fort">
+            <h3>32. Hotel 101 Fort</h3>
+            <img src="assets/projects/32.png" alt="Hotel 101 Fort">
+        </div>
+        <div class="project-card" id="hss-tower-1">
+            <h3>33. HSS Tower 1</h3>
+            <img src="assets/projects/33.png" alt="HSS Tower 1">
+        </div>
+        <div class="project-card" id="imperial-plaza">
+            <h3>34. Imperial Plaza</h3>
+            <img src="assets/projects/34.png" alt="Imperial Plaza">
+        </div>
+        <div class="project-card" id="8-rockwell">
+            <h3>35. 8 Rockwell</h3>
+            <img src="assets/projects/35.png" alt="8 Rockwell">
+        </div>
+        <div class="project-card" id="m3-corporate-center">
+            <h3>36. M3 Corporate Center</h3>
+            <img src="assets/projects/36.png" alt="M3 Corporate Center">
+        </div>
+        <div class="project-card" id="makati-commerce-center">
+            <h3>37. Makati Commerce Center</h3>
+            <img src="assets/projects/37.png" alt="Makati Commerce Center">
+        </div>
+        <div class="project-card" id="malolos-clark-railway-project">
+            <h3>38. Malolos Clark Railway Project</h3>
+            <img src="assets/projects/38.png" alt="Malolos Clark Railway Project">
+        </div>
+        <div class="project-card" id="market-market">
+            <h3>39. Market Market</h3>
+            <img src="assets/projects/39.png" alt="Market Market">
+        </div>
+        <div class="project-card" id="mayflower-bpo-greenfield-tower">
+            <h3>40. Mayflower BPO (Greenfield Tower)</h3>
+            <img src="assets/projects/40.png" alt="Mayflower BPO (Greenfield Tower)">
+        </div>
+        <div class="project-card" id="mcentral-warehouse-cabuyao">
+            <h3>41. MCentral Warehouse Cabuyao</h3>
+            <img src="assets/projects/41.png" alt="MCentral Warehouse Cabuyao">
+        </div>
+        <div class="project-card" id="mcentral-warehouse-marikina">
+            <h3>42. MCentral Warehouse Marikina</h3>
+            <img src="assets/projects/42.png" alt="MCentral Warehouse Marikina">
+        </div>
+        <div class="project-card" id="metrojet-new-hangar">
+            <h3>43. Metrojet New Hangar</h3>
+            <img src="assets/projects/43.png" alt="Metrojet New Hangar">
+        </div>
+        <div class="project-card" id="naia-terminal-2">
+            <h3>44. NAIA Terminal 2</h3>
+            <img src="assets/projects/44.png" alt="NAIA Terminal 2">
+        </div>
+        <div class="project-card" id="nccc-mall-davao">
+            <h3>45. NCCC Mall Davao</h3>
+            <img src="assets/projects/45.png" alt="NCCC Mall Davao">
+        </div>
+        <div class="project-card" id="nepo-bencab-tower">
+            <h3>46. Nepo Bencab Tower</h3>
+            <img src="assets/projects/46.png" alt="Nepo Bencab Tower">
+        </div>
+        <div class="project-card" id="new-zealand-creamery-commercial-warehouse">
+            <h3>47. New Zealand Creamery - Commercial & Warehouse</h3>
+            <img src="assets/projects/47.png" alt="New Zealand Creamery - Commercial & Warehouse">
+        </div>
+        <div class="project-card" id="one-maridien">
+            <h3>48. One Maridien</h3>
+            <img src="assets/projects/48.png" alt="One Maridien">
+        </div>
+        <div class="project-card" id="one-proscenium">
+            <h3>49. One Proscenium</h3>
+            <img src="assets/projects/49.png" alt="One Proscenium">
+        </div>
+        <div class="project-card" id="park-central-towers">
+            <h3>50. Park Central Towers</h3>
+            <img src="assets/projects/50.png" alt="Park Central Towers">
+        </div>
+        <div class="project-card" id="park-triangle-corporate-plaza-north-tower-falcon">
+            <h3>51. Park Triangle Corporate Plaza North Tower-Falcon</h3>
+            <img src="assets/projects/51.png" alt="Park Triangle Corporate Plaza North Tower-Falcon">
+        </div>
+        <div class="project-card" id="parqal">
+            <h3>52. Parqal</h3>
+            <img src="assets/projects/52.png" alt="Parqal">
+        </div>
+        <div class="project-card" id="pps-manila-regional-office">
+            <h3>53. PPS Manila Regional Office</h3>
+            <img src="assets/projects/53.png" alt="PPS Manila Regional Office">
+        </div>
+        <div class="project-card" id="quantum-residences-tower">
+            <h3>54. Quantum Residences Tower</h3>
+            <img src="assets/projects/54.png" alt="Quantum Residences Tower">
+        </div>
+        <div class="project-card" id="richmond-square">
+            <h3>55. Richmond Square</h3>
+            <img src="assets/projects/55.png" alt="Richmond Square">
+        </div>
+        <div class="project-card" id="robinsons-cyber-omega">
+            <h3>56. Robinsons Cyber Omega</h3>
+            <img src="assets/projects/56.png" alt="Robinsons Cyber Omega">
+        </div>
+        <div class="project-card" id="robinsons-cyberscape-gamma">
+            <h3>57. Robinsons Cyberscape Gamma</h3>
+            <img src="assets/projects/57.png" alt="Robinsons Cyberscape Gamma">
+        </div>
+        <div class="project-card" id="robinsons-magnolia-mall-expansion">
+            <h3>58. Robinsons Magnolia Mall Expansion</h3>
+            <img src="assets/projects/58.png" alt="Robinsons Magnolia Mall Expansion">
+        </div>
+        <div class="project-card" id="robinsons-place-manila-main-mall-midtown">
+            <h3>59. Robinsons Place Manila - Main Mall & Midtown</h3>
+            <img src="assets/projects/59.png" alt="Robinsons Place Manila - Main Mall & Midtown">
+        </div>
+        <div class="project-card" id="rockwell-south-at-carmelray">
+            <h3>60. Rockwell South at Carmelray</h3>
+            <img src="assets/projects/60.png" alt="Rockwell South at Carmelray">
+        </div>
+        <div class="project-card" id="s-r-bacoor">
+            <h3>61. S&R Bacoor</h3>
+            <img src="assets/projects/61.png" alt="S&R Bacoor">
+        </div>
+        <div class="project-card" id="s-r-baliwag">
+            <h3>62. S&R Baliwag</h3>
+            <img src="assets/projects/62.png" alt="S&R Baliwag">
+        </div>
+        <div class="project-card" id="s-r-sto-tomas">
+            <h3>63. S&R Sto. Tomas</h3>
+            <img src="assets/projects/63.png" alt="S&R Sto. Tomas">
+        </div>
+        <div class="project-card" id="santolan-town-plaza">
+            <h3>64. Santolan Town Plaza</h3>
+            <img src="assets/projects/64.png" alt="Santolan Town Plaza">
+        </div>
+        <div class="project-card" id="savya-financial-center">
+            <h3>65. Savya Financial Center</h3>
+            <img src="assets/projects/65.png" alt="Savya Financial Center">
+        </div>
+        <div class="project-card" id="six-e-com-center">
+            <h3>66. Six E-com Center</h3>
+            <img src="assets/projects/66.png" alt="Six E-com Center">
+        </div>
+        <div class="project-card" id="skytech-it-park">
+            <h3>67. Skytech IT Park</h3>
+            <img src="assets/projects/67.png" alt="Skytech IT Park">
+        </div>
+        <div class="project-card" id="sm-aura">
+            <h3>68. SM Aura</h3>
+            <img src="assets/projects/68.png" alt="SM Aura">
+        </div>
+        <div class="project-card" id="sm-keppel">
+            <h3>69. SM Keppel</h3>
+            <img src="assets/projects/69.png" alt="SM Keppel">
+        </div>
+        <div class="project-card" id="solaire-north">
+            <h3>70. Solaire North</h3>
+            <img src="assets/projects/70.png" alt="Solaire North">
+        </div>
+        <div class="project-card" id="suntrust-asmara">
+            <h3>71. Suntrust Asmara</h3>
+            <img src="assets/projects/71.png" alt="Suntrust Asmara">
+        </div>
+        <div class="project-card" id="taft-east-gate-cebu">
+            <h3>72. Taft East Gate Cebu</h3>
+            <img src="assets/projects/72.png" alt="Taft East Gate Cebu">
+        </div>
+        <div class="project-card" id="the-big-apple">
+            <h3>73. The Big Apple</h3>
+            <img src="assets/projects/73.png" alt="The Big Apple">
+        </div>
+        <div class="project-card" id="the-gentry">
+            <h3>74. The Gentry</h3>
+            <img src="assets/projects/74.png" alt="The Gentry">
+        </div>
+        <div class="project-card" id="the-proscenium">
+            <h3>75. The Proscenium</h3>
+            <img src="assets/projects/75.png" alt="The Proscenium">
+        </div>
+        <div class="project-card" id="university-tower-5">
+            <h3>76. University Tower 5</h3>
+            <img src="assets/projects/76.png" alt="University Tower 5">
+        </div>
+        <div class="project-card" id="zuellig-building">
+            <h3>77. Zuellig Building</h3>
+            <img src="assets/projects/77.png" alt="Zuellig Building">
+        </div>
+    </div>
+
+    <div class="projects-section" id="ongoing">
+        <h2>Ongoing Projects</h2>
+
+        <div class="project-card" id="alonzo-parksuites">
+            <h3>1. Alonzo Parksuites</h3>
+            <img src="assets/projects/ongoing/1.png" alt="Alonzo Parksuites">
+        </div>
+        <div class="project-card" id="arcovia-palazzo-altea">
+            <h3>2. Arcovia Palazzo-Altea</h3>
+            <img src="assets/projects/ongoing/2.png" alt="Arcovia Palazzo-Altea">
+        </div>
+        <div class="project-card" id="bdo-corporate-center-makati">
+            <h3>3. BDO Corporate Center Makati</h3>
+            <img src="assets/projects/ongoing/3.png" alt="BDO Corporate Center Makati">
+        </div>
+        <div class="project-card" id="connor">
+            <h3>4. Connor</h3>
+            <img src="assets/projects/ongoing/4.png" alt="Connor">
+        </div>
+        <div class="project-card" id="dasmari-as-police-station">
+            <h3>5. Dasmariñas Police Station</h3>
+            <img src="assets/projects/ongoing/5.png" alt="Dasmariñas Police Station">
+        </div>
+        <div class="project-card" id="edades-west">
+            <h3>6. Edades West</h3>
+            <img src="assets/projects/ongoing/6.png" alt="Edades West">
+        </div>
+        <div class="project-card" id="empress">
+            <h3>7. Empress</h3>
+            <img src="assets/projects/ongoing/7.png" alt="Empress">
+        </div>
+        <div class="project-card" id="estancia-expansion">
+            <h3>8. Estancia Expansion</h3>
+            <img src="assets/projects/ongoing/8.png" alt="Estancia Expansion">
+        </div>
+        <div class="project-card" id="galleon-office-tower-residential-tower-podium">
+            <h3>9. Galleon Office Tower, Residential Tower & Podium</h3>
+            <img src="assets/projects/ongoing/9.png" alt="Galleon Office Tower, Residential Tower & Podium">
+        </div>
+        <div class="project-card" id="gh-tower">
+            <h3>10. GH Tower</h3>
+            <img src="assets/projects/ongoing/10.png" alt="GH Tower">
+        </div>
+        <div class="project-card" id="gh-mall">
+            <h3>11. GH Mall</h3>
+            <img src="assets/projects/ongoing/11.png" alt="GH Mall">
+        </div>
+        <div class="project-card" id="kareila-dc-calamba">
+            <h3>12. Kareila DC Calamba</h3>
+            <img src="assets/projects/ongoing/12.png" alt="Kareila DC Calamba">
+        </div>
+        <div class="project-card" id="la-salle-greenhills-senior-high-school-ib-bldg">
+            <h3>13. La Salle Greenhills Senior High School + IB Bldg.</h3>
+            <img src="assets/projects/ongoing/13.png" alt="La Salle Greenhills Senior High School + IB Bldg.">
+        </div>
+        <div class="project-card" id="laya-by-shang">
+            <h3>14. Laya by Shang</h3>
+            <img src="assets/projects/ongoing/14.png" alt="Laya by Shang">
+        </div>
+        <div class="project-card" id="malolos-clark-railway-cp-n-04">
+            <h3>15. Malolos Clark Railway CP N-04</h3>
+            <img src="assets/projects/ongoing/15.png" alt="Malolos Clark Railway CP N-04">
+        </div>
+        <div class="project-card" id="maple-at-verdant">
+            <h3>16. Maple at Verdant</h3>
+            <img src="assets/projects/ongoing/16.png" alt="Maple at Verdant">
+        </div>
+        <div class="project-card" id="moldex-residences-baguio-davos-bldg">
+            <h3>17. Moldex Residences Baguio - Davos Bldg.</h3>
+            <img src="assets/projects/ongoing/17.png" alt="Moldex Residences Baguio - Davos Bldg.">
+        </div>
+        <div class="project-card" id="new-senate-bldg">
+            <h3>18. New Senate Bldg.</h3>
+            <img src="assets/projects/ongoing/18.png" alt="New Senate Bldg.">
+        </div>
+        <div class="project-card" id="oceanfront-premier-residences">
+            <h3>19. Oceanfront Premier Residences</h3>
+            <img src="assets/projects/ongoing/19.png" alt="Oceanfront Premier Residences">
+        </div>
+        <div class="project-card" id="pioneer-house-bgc">
+            <h3>20. Pioneer House BGC</h3>
+            <img src="assets/projects/ongoing/20.png" alt="Pioneer House BGC">
+        </div>
+        <div class="project-card" id="pldt-makati-general-office">
+            <h3>21. PLDT Makati General Office</h3>
+            <img src="assets/projects/ongoing/21.png" alt="PLDT Makati General Office">
+        </div>
+        <div class="project-card" id="power-plant-mall-angeles-city-pampanga">
+            <h3>22. Power Plant Mall - Angeles City, Pampanga</h3>
+            <img src="assets/projects/ongoing/22.png" alt="Power Plant Mall - Angeles City, Pampanga">
+        </div>
+        <div class="project-card" id="primex-tower">
+            <h3>23. Primex Tower</h3>
+            <img src="assets/projects/ongoing/23.png" alt="Primex Tower">
+        </div>
+        <div class="project-card" id="robinsons-bridgetowne-mall-hotel">
+            <h3>24. Robinsons Bridgetowne Mall & Hotel</h3>
+            <img src="assets/projects/ongoing/24.png" alt="Robinsons Bridgetowne Mall & Hotel">
+        </div>
+        <div class="project-card" id="sierra-valley-gardens-phase-1b-tower-3-4">
+            <h3>25. Sierra Valley Gardens Phase 1B: Tower 3 & 4</h3>
+            <img src="assets/projects/ongoing/25.png" alt="Sierra Valley Gardens Phase 1B: Tower 3 & 4">
+        </div>
+        <div class="project-card" id="st-luke-s-medical-center-e-rodriguez-quezon-city">
+            <h3>26. St. Luke's Medical Center E. Rodriguez, Quezon City</h3>
+            <img src="assets/projects/ongoing/26.png" alt="St. Luke's Medical Center E. Rodriguez, Quezon City">
+        </div>
+        <div class="project-card" id="st-luke-s-medical-center-offsite-support-facility">
+            <h3>27. St. Luke's Medical Center Offsite Support Facility</h3>
+            <img src="assets/projects/ongoing/27.png" alt="St. Luke's Medical Center Offsite Support Facility">
+        </div>
+        <div class="project-card" id="sta-lucia-mall-ponte-verde-davao-city">
+            <h3>28. Sta. Lucia Mall - Ponte Verde, Davao City</h3>
+            <img src="assets/projects/ongoing/28.png" alt="Sta. Lucia Mall - Ponte Verde, Davao City">
+        </div>
+        <div class="project-card" id="supercare-medical-center">
+            <h3>29. Supercare Medical Center</h3>
+            <img src="assets/projects/ongoing/29.png" alt="Supercare Medical Center">
+        </div>
+        <div class="project-card" id="sync-s-tower">
+            <h3>30. Sync-S Tower</h3>
+            <img src="assets/projects/ongoing/30.png" alt="Sync-S Tower">
+        </div>
+        <div class="project-card" id="t-one-residences">
+            <h3>31. T One Residences</h3>
+            <img src="assets/projects/ongoing/31.png" alt="T One Residences">
+        </div>
+        <div class="project-card" id="the-belvedere-towers-1-2-3">
+            <h3>32. The Belvedere Towers 1, 2 & 3</h3>
+            <img src="assets/projects/ongoing/32.png" alt="The Belvedere Towers 1, 2 & 3">
+        </div>
+        <div class="project-card" id="the-jewel-mall-office">
+            <h3>33. The Jewel Mall & Office</h3>
+            <img src="assets/projects/ongoing/33.png" alt="The Jewel Mall & Office">
+        </div>
+        <div class="project-card" id="ust-dr-william-t-belo-sta-rosa-laguna">
+            <h3>34. UST Dr. William T. Belo Sta. Rosa, Laguna</h3>
+            <img src="assets/projects/ongoing/34.png" alt="UST Dr. William T. Belo Sta. Rosa, Laguna">
+        </div>
+        <div class="project-card" id="west-grove-hotel-bulihan-circle">
+            <h3>35. West Grove Hotel-Bulihan Circle</h3>
+            <img src="assets/projects/ongoing/35.png" alt="West Grove Hotel-Bulihan Circle">
+        </div>
+    </div>
+</main>
+</div>
+
+<div class="contact-overlay" id="contactOverlay">
+  <div class="contact-popup">
+    <button class="close-btn" id="closeContact" aria-label="Close">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round">
+        <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+      </svg>
+    </button>
+
+    <p class="popup-label">Reach us</p>
+    <h2 class="popup-title">Contact us</h2>
+
+    <div class="map-slot">
+      <img src="assets/map.png" alt="Office location map">
+    </div>
+
+    <div class="contact-row">
+      <div class="icon-wrap">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#07669e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      </div>
+      <div class="row-text">
+        <span class="row-label">Address</span>
+        <span class="row-value">699 Jose Abad Santos Street Little Baguio, San Juan City 1500 Philippines</span>
+      </div>
+    </div>
+
+    <div class="contact-row">
+      <div class="icon-wrap">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#07669e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.07 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3 1.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      </div>
+      <div class="row-text">
+        <span class="row-label">Phone</span>
+        <span class="row-value"><a href="tel:+63287228260">Trunkline: +63 2 8722 8260</a></span>
+        <span class="row-value"><a href="tel:+639176270875">Mobile: +63 917 541 2107</a></span>
+      </div>
+    </div>
+
+    <div class="contact-row">
+      <div class="icon-wrap">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#07669e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      </div>
+      <div class="row-text">
+        <span class="row-label">Email</span>
+        <span class="row-value"><a href="mailto:penta.eng@yahoo.com">penta.eng@yahoo.com</a></span>
+      </div>
+    </div>
+
+    <div class="contact-row">
+      <div class="icon-wrap">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#07669e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+      </div>
+      <div class="row-text">
+        <span class="row-label">Website</span>
+        <span class="row-value"><a href="#">www.pentaengineering.ph</a></span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="pdf-overlay" id="pdfOverlay">
+  <div class="pdf-popup">
+    <button class="close-btn" id="closePdf" aria-label="Close">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round">
+        <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+      </svg>
+    </button>
+
+    <div class="pdf-canvas-wrap">
+      <canvas id="pdfCanvas"></canvas>
+    </div>
+
+    <div class="pdf-controls">
+    <button id="pdfPrev" aria-label="Previous page">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6"/>
+        </svg>
+    </button>
+    <span id="pdfPageNum">Page 1 of 1</span>
+    <button id="pdfNext" aria-label="Next page">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"/>
+        </svg>
+    </button>
+    </div>
+  </div>
+</div>
+
+<footer>
+    <div class="footer-wrap">
+        <div class="footer-left">
+            <img src="assets/logo.png" alt="Penta logo">
+            <div class="footer-socials">
+                <div class="social-icon">
+                    <img src="assets/facebook.png" alt="Facebook">
+                </div>
+                <div class="social-icon">
+                    <img src="assets/instagram.png" alt="Facebook">
+                </div>
+                <div class="social-icon">
+                    <img src="assets/linkedin.png" alt="Facebook">
+                </div>
+            </div>
+        </div>
+        <ul class="footer-nav">
+            <li><h2>Links</h2></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+        <ul class="footer-nav">
+            <li><h2>Contact Us</h2></li>
+            <li><a href="#" onclick="document.getElementById('contactOverlay').classList.add('open'); return false;">Email</a></li>
+            <li><a href="#" onclick="document.getElementById('contactOverlay').classList.add('open'); return false;">Phone Number</a></li>
+            <li><a href="#" onclick="document.getElementById('contactOverlay').classList.add('open'); return false;">Address</a></li>
+        </ul>
+        <div class="footer-bottom">
+            <span>Back to Top</span>
+            <button class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="18 15 12 9 6 15"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+</footer>
+<script src="js/nav.js" defer></script>
+</body>
+</html>

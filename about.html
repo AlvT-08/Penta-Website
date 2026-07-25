@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" type="image/x-icon" href="assets/logo.png">
     <title>Penta Engineering Machineries</title>
+    <link rel="icon" type="image/x-icon" href="assets/logo.png">
 </head>
 <body>
-    <header class="nav-bar" id="navbar">
+
+<header class="nav-bar" id="navbar">
     <div class="nav-top">
         <div class="logo">
             <a href="index.html">
@@ -41,17 +42,30 @@
                         </svg>
                     </button>
                 </li>
+                <li class="nav-item has-dropdown">
+                    <a href="Projects.html">Projects</a>
+                    <button class="dropdown-toggle" data-target="menu-projects">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="6 9 12 15 18 9"/>
+                        </svg>
+                    </button>
+                </li>
             </ul>
         </nav>
         <button type="button" id="contactBtn">Contact Us</button>
+        <button type="button" id="hamburgerBtn" class="hamburger-btn" aria-label="Toggle menu" aria-expanded="false">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
     </div>
 
     <div class="mega-menu" id="menu-home">
         <div class="mega-col">
             <p class="mega-label">Company</p>
             <a href="index.html#hero">Company Logo</a>
-            <a href="index.html#brands">Brand / Product Logo</a>
-            <a href="index.html#contact">Office Address / Tel / Email</a>
+            <a href="index.html#brands">Brands</a>
+            <a href="index.html#contact">Contact Info</a>
         </div>
     </div>
 
@@ -59,33 +73,45 @@
         <div class="mega-col">
             <p class="mega-label">About Us</p>
             <a href="about.html#mission">Mission / Vision</a>
-            <a href="about.html#history">Company Brief History</a>
+            <a href="about.html#history">Company History</a>
+        </div>
+    </div>
+
+    <div class="mega-menu" id="menu-projects">
+        <div class="mega-col">
+            <p class="mega-label">Status</p>
+            <a href="projects.html#completed">Completed</a>
+            <a href="projects.html#ongoing">Ongoing</a>
         </div>
     </div>
 
     <div class="mega-menu" id="menu-products">
-        <div class="mega-col">
-            <p class="mega-label">Pumps</p>
-            <a href="products.html#paco">PACO</a>
-            <a href="products.html#grundfos">Grundfos</a>
-            <a href="products.html#fairbanks">Fairbanks Nijhuis</a>
-            <a href="products.html#eim">EIM</a>
-        </div>
-        <div class="mega-col">
-            <p class="mega-label">Cooling</p>
-            <a href="products.html#Cooling">Cooling Tower</a>
-            <a href="products.html#Ccooler">Closed Circuit Cooler</a>
-            <a href="products.html#Evaporative">Evaporative Condenser</a>
-        </div>
-        <div class="mega-col">
-            <p class="mega-label">Systems</p>
-            <a href="products.html#Gasketed">Gasketed Plate Heat Exchanger</a>
-            <a href="products.html#Separators">Air Separator</a>
-            <a href="products.html#Expansion">Expansion Tank</a>
-            <a href="products.html#Balance">Balancing Valve</a>
-            <a href="products.html#Pressure">Package Pressurization System</a>
+    <div class="mega-col">
+        <p class="mega-label">Pumps</p>
+        <a href="products.html#paco">PACO</a>
+        <a href="products.html#grundfos">Grundfos</a>
+        <a href="products.html#fairbanks">Fairbanks Nijhuis</a>
+        <a href="products.html#eim">EIM</a>
+    </div>
+
+    <div class="mega-group">
+        <p class="mega-label mega-label-wide">HVAC and Refrigeration Equipment</p>
+        <div class="mega-group-row">
+            <div class="mega-col">
+                <a href="products.html#Cooling">Cooling Tower</a>
+                <a href="products.html#Ccoolers">Closed Circuit Cooler</a>
+                <a href="products.html#Evaporative">Evaporative Condenser</a>
+            </div>
+            <div class="mega-col">
+                <a href="products.html#Gasketed">Gasketed Plate Heat Exchanger</a>
+                <a href="products.html#Separators">Air Separator</a>
+                <a href="products.html#Expansion">Expansion Tank</a>
+                <a href="products.html#Balance">Balancing Valve</a>
+                <a href="products.html#Pressure">Package Pressurization Unit</a>
+            </div>
         </div>
     </div>
+</div>
 </header>
 
     <section class="about">
@@ -185,7 +211,7 @@
       <div class="row-text">
         <span class="row-label">Phone</span>
         <span class="row-value"><a href="tel:+63287228260">Trunkline: +63 2 8722 8260</a></span>
-        <span class="row-value"><a href="tel:+639176270875">Mobile: +63 917 627 0875</a></span>
+        <span class="row-value"><a href="tel:+639176270875">Mobile: +63 917 541 2107</a></span>
       </div>
     </div>
 

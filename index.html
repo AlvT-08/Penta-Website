@@ -42,17 +42,30 @@
                         </svg>
                     </button>
                 </li>
+                <li class="nav-item has-dropdown">
+                    <a href="Projects.html">Projects</a>
+                    <button class="dropdown-toggle" data-target="menu-projects">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="6 9 12 15 18 9"/>
+                        </svg>
+                    </button>
+                </li>
             </ul>
         </nav>
         <button type="button" id="contactBtn">Contact Us</button>
+        <button type="button" id="hamburgerBtn" class="hamburger-btn" aria-label="Toggle menu" aria-expanded="false">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
     </div>
 
     <div class="mega-menu" id="menu-home">
         <div class="mega-col">
             <p class="mega-label">Company</p>
             <a href="index.html#hero">Company Logo</a>
-            <a href="index.html#brands">Brand / Product Logo</a>
-            <a href="index.html#contact">Office Address / Tel / Email</a>
+            <a href="index.html#brands">Brands</a>
+            <a href="index.html#contact">Contact Info</a>
         </div>
     </div>
 
@@ -60,39 +73,52 @@
         <div class="mega-col">
             <p class="mega-label">About Us</p>
             <a href="about.html#mission">Mission / Vision</a>
-            <a href="about.html#history">Company Brief History</a>
+            <a href="about.html#history">Company History</a>
+        </div>
+    </div>
+
+    <div class="mega-menu" id="menu-projects">
+        <div class="mega-col">
+            <p class="mega-label">Status</p>
+            <a href="projects.html#completed">Completed</a>
+            <a href="projects.html#ongoing">Ongoing</a>
         </div>
     </div>
 
     <div class="mega-menu" id="menu-products">
-        <div class="mega-col">
-            <p class="mega-label">Pumps</p>
-            <a href="products.html#paco">PACO</a>
-            <a href="products.html#grundfos">Grundfos</a>
-            <a href="products.html#fairbanks">Fairbanks Nijhuis</a>
-            <a href="products.html#eim">EIM</a>
-        </div>
-        <div class="mega-col">
-            <p class="mega-label">Cooling</p>
-            <a href="products.html#Cooling">Cooling Tower</a>
-            <a href="products.html#Ccooler">Closed Circuit Cooler</a>
-            <a href="products.html#Evaporative">Evaporative Condenser</a>
-        </div>
-        <div class="mega-col">
-            <p class="mega-label">Systems</p>
-            <a href="products.html#Gasketed">Gasketed Plate Heat Exchanger</a>
-            <a href="products.html#Separators">Air Separator</a>
-            <a href="products.html#Expansion">Expansion Tank</a>
-            <a href="products.html#Balance">Balancing Valve</a>
-            <a href="products.html#Pressure">Package Pressurization System</a>
+    <div class="mega-col">
+        <p class="mega-label">Pumps</p>
+        <a href="products.html#paco">PACO</a>
+        <a href="products.html#grundfos">Grundfos</a>
+        <a href="products.html#fairbanks">Fairbanks Nijhuis</a>
+        <a href="products.html#eim">EIM</a>
+    </div>
+
+    <div class="mega-group">
+        <p class="mega-label mega-label-wide">HVAC and Refrigeration Equipment</p>
+        <div class="mega-group-row">
+            <div class="mega-col">
+                <a href="products.html#Cooling">Cooling Tower</a>
+                <a href="products.html#Ccoolers">Closed Circuit Cooler</a>
+                <a href="products.html#Evaporative">Evaporative Condenser</a>
+            </div>
+            <div class="mega-col">
+                <a href="products.html#Gasketed">Gasketed Plate Heat Exchanger</a>
+                <a href="products.html#Separators">Air Separator</a>
+                <a href="products.html#Expansion">Expansion Tank</a>
+                <a href="products.html#Balance">Balancing Valve</a>
+                <a href="products.html#Pressure">Package Pressurization Unit</a>
+            </div>
         </div>
     </div>
+</div>
 </header>
 
 <section class="hero" id="hero">
-  <video autoplay muted loop playsinline>
+  <video autoplay muted loop playsinline poster="assets/hero-poster.jpg" preload="metadata">
     <source src="assets/hero.mp4" type="video/mp4">
   </video>
+  <img class="hero-mobile-img" src="assets/hero-poster.jpg" alt="Penta Engineering Machineries">
 </section>
 
 <section class ="line"></section>
@@ -106,12 +132,10 @@
                 <div class="icon"><img src="assets/sales.png"></div>
                 <h2>Sales, Distribution, and Technical Support </h2>
                 <p>
-                • Centrifugal Pump for plumbing & sanitary, fire protection system, and Hydronic System. <br>
-                • Cooling Tower, Closed Circuit Cooler, Condeser.<br>
-                • Gasketed Plate Heat Exchanger.<br>
-                • Air Separator & Expansion Tank.<br>
-                • Package Pressurization System.<br>
-                • Controller, Varible Frequency Drive, Soft Starter.</p>
+                •  Fluid Handling & Pumping System <br>
+                • Thermal Management & Cooling <br>
+                • Hydronic Balancing & Protection <br>
+                • Motor Control and Automation</p>
             </div>
             <div class="box-wrapper">
                 <div class="icon"><img src="assets/prevent.png"></div>
@@ -121,7 +145,7 @@
             <div class="box-wrapper">
                 <div class="icon"><img src="assets/repair.png"></div>
                 <h2>Servicing and Repair Works</h2>
-                <p>To keep your operations running smoothly. Our highly skilled technicians provide on-site field services and bench repairs for a wide range of centrifugal pumps and controllers.</p>
+                <p>To keep your operations running smoothly. Our highly skilled technicians provide on-site field services and bench repairs for a wide range of pumps, cooling towers, and controllers.</p>
             </div>
         </div>
     </div>
@@ -135,8 +159,9 @@
     <div class="brands-slider-wrapper">
         <div class="brands-container">
             <div class="brand-wrapper">
+
                 <img src="assets/paco.png" alt="Paco">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>Horizontal End Suction Centrifugal Pump, type LC and LF. Horizontal Split Case Double Suction Centrifugal Pump, type KP.</p>
                 <div class="brand-footer">
                     <h2>View Products</h2>
                     <a href="products.html#paco"><button class="view-button" aria-label="View Details"></button></a>
@@ -144,96 +169,110 @@
             </div>
             <div class="brand-wrapper">
                 <img src="assets/grundfos.png" alt="Grundfos">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>A wide array of products, pump solutions and services for all applications.</p>
                 <div class="brand-footer">
                     <h2>View Products</h2>
-                    <a href="products.html#grundfos"><button class="view-button" aria-label="View Details"></button></a>   
+                    <a href="https://www.grundfos.com/ph"><button class="view-button" aria-label="View Details"></button></a>   
                 </div>             
             </div>
             <div class="brand-wrapper">
                 <img src="assets/pentair.png" alt="Pentair">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>Fire pumps that meets the NFPA standards, UL listed, FM approved. Available with electric motor or diesel engine. Tested to ensure that it meets the required specifications before leaving the factory.</p>
                 <div class="brand-footer">
                     <h2>View Products</h2>
-                    <a href="products.html#fairbanks"><button class="view-button" aria-label="View Details"></button></a>      
+                    <a href="https://www.pentair.com/en-us/flow/fairbanks-nijhuis.html"><button class="view-button" aria-label="View Details"></button></a>      
                 </div>             
             </div>
             <div class="brand-wrapper">
                 <img src="assets/eim.png" alt="EIM">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>Wide range of submersible pumps for sump, sewage and wastewater treatment for buildings, factories, power plant and minina industries.</p>
                 <div class="brand-footer">
                     <h2>View Products</h2>
-                    <a href="products.html#eim"><button class="view-button" aria-label="View Details"></button></a>
+                    <a href="https://www.eimpump.co.jp/en/"><button class="view-button" aria-label="View Details"></button></a>
                 </div>             
             </div>
             <div class="brand-wrapper">
                 <img src="assets/evapco.png" alt="Evapco">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>Offers an extensive selection of products for Commercial HVAC, Industrial Refrigeration, Power Generation and Industrial Process.</p>
                 <div class="brand-footer">
                     <h2>View Products</h2>
+                    <a href="https://www.evapco.com/"><button class="view-button" aria-label="View Details"></button></a>
+                    
                 </div>
             </div>
             <div class="brand-wrapper">
                 <img src="assets/imi.png" alt="IMi">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>IMI TA and Pneumatex specializes in hydronic balancing and premium pressurization, degassing, and water quality solutions for HVAC systems.</p>
                 <div class="brand-footer">
                     <h2>View Products</h2>
+                    <a href="https://climatecontrol.imiplc.com/"><button class="view-button" aria-label="View Details"></button></a>
                 </div>
             </div>
             <div class="brand-wrapper">
                 <img src="assets/alfalaval.png" alt="Alfa Laval">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>The marker's widest plate heat exhanger portfolio.</p>
                 <div class="brand-footer">
                     <h2>View Products</h2>
+                    <a href="https://www.alfalaval.com/products/heat-transfer/plate-heat-exchangers/plate-heat-exchangers/"><button class="view-button" aria-label="View Details"></button></a>
+                    <h2>PHE Select</h2>
+                    <a href="https://www.alfalaval.com/industries/hvac/hvac-consultant-portal/main/"><button class="view-button" aria-label="View Details"></button></a>
+                   
                 </div>
             </div>
             <div class="brand-wrapper">
                 <img src="assets/amtrol.png" alt="Amtrol">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>Hydropneumatic Tanks (NSF/ANSI/CAN 61 Certified). Expansion Tanks, Tangential Air Separators (ASME Certified).</p>
                 <div class="brand-footer">
                     <h2>View Products</h2>
+                    <a href="https://www.amtrol.com/"><button class="view-button" aria-label="View Details"></button></a>
                 </div>
             </div>
             <div class="brand-wrapper">
                 <img src="assets/nema.png" alt="Nema">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>Hydropneumatic Tanks & Expansion Tanks.</p>
                 <div class="brand-footer">
                     <h2>View Products</h2>
+                    <a href="https://nema-winkelmann.com/index.php?id=6&L=1/"><button class="view-button" aria-label="View Details"></button></a>
                 </div>
             </div>
             <div class="brand-wrapper">
                 <img src="assets/danfoss.png" alt="Danfoss">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>Variable frequency Drives. <br> Soft Starters.</p>
                 <div class="brand-footer">
                     <h2>View Products</h2>
+                    <a href="https://www.danfoss.com/en/"><button class="view-button" aria-label="View Details"></button></a>
                 </div>
             </div>
             <div class="brand-wrapper">
                 <img src="assets/ab.png" alt="AB">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>Motor Control & Protection.</p>
                 <div class="brand-footer">
                     <h2>View Products</h2>
+                    <a href="https://www.rockwellautomation.com/en-us.html"><button class="view-button" aria-label="View Details"></button></a>
                 </div>
             </div>
             <div class="brand-wrapper">
                 <img src="assets/ls.png" alt="LS">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>Motor Control & Protection.</p>
                 <div class="brand-footer">
                     <h2>View Products</h2>
+                    <a href="https://www.ls-electric.com/"><button class="view-button" aria-label="View Details"></button></a>
                 </div>
             </div>
             <div class="brand-wrapper">
                 <img src="assets/eaton.png" alt="Eaton">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>Fire pump controller, Automatic Transfer Switch. UL listed FM approved, built to the latest edition of NFPA 20 standards.</p>
                 <div class="brand-footer">
                     <h2>View Products</h2>
+                    <a href="https://www.tornatech.com/product-category/fire-pump-controllers-accessories/"><button class="view-button" aria-label="View Details"></button></a>
                 </div>
             </div>
             <div class="brand-wrapper">
                 <img src="assets/tornatech.png" alt="Tornatech">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>Conception and manufacturing of fire pump controllers.</p>
                 <div class="brand-footer">
                     <h2>View Products</h2>
+                    <a href="https://www.tornatech.com/product-category/fire-pump-controllers-accessories/"><button class="view-button" aria-label="View Details"></button></a>
                 </div>
             </div>
         </div>
@@ -260,7 +299,28 @@
             <button onclick="document.getElementById('contactOverlay').classList.add('open')">Where to find us?</button>
         </div>
     </div>
-    <img class="cta-image" src="assets/pump.png" alt="pump">
+    <div class="cta-image-slider" id="ctaSlider">
+        <img class="cta-slide active" src="assets/pumps/pump-01.png" alt="pump">
+        <img class="cta-slide" src="assets/pumps/pump-02.png" alt="pump">
+        <img class="cta-slide" src="assets/pumps/pump-03.png" alt="pump">
+        <img class="cta-slide" src="assets/pumps/pump-04.png" alt="pump">
+        <img class="cta-slide" src="assets/pumps/pump-05.png" alt="pump">
+        <img class="cta-slide" src="assets/pumps/pump-06.png" alt="pump">
+        <img class="cta-slide" src="assets/pumps/pump-07.png" alt="pump">
+        <img class="cta-slide" src="assets/pumps/pump-08.png" alt="pump">
+        <img class="cta-slide" src="assets/pumps/pump-09.png" alt="pump">
+        <img class="cta-slide" src="assets/pumps/pump-10.png" alt="pump">
+        <img class="cta-slide" src="assets/pumps/pump-11.png" alt="pump">
+        <img class="cta-slide" src="assets/pumps/pump-12.png" alt="pump">
+        <img class="cta-slide" src="assets/pumps/pump-13.png" alt="pump">
+        <img class="cta-slide" src="assets/pumps/pump-14.png" alt="pump">
+        <img class="cta-slide" src="assets/pumps/pump-15.png" alt="pump">
+        <img class="cta-slide" src="assets/pumps/pump-16.png" alt="pump">
+        <img class="cta-slide" src="assets/pumps/pump-17.png" alt="pump">
+        <img class="cta-slide" src="assets/pumps/pump-18.png" alt="pump">
+        <img class="cta-slide" src="assets/pumps/pump-19.png" alt="pump">
+        <img class="cta-slide" src="assets/pumps/pump-20.png" alt="pump">
+    </div>
 </section>
 
 <div class="contact-overlay" id="contactOverlay">
@@ -295,7 +355,7 @@
       <div class="row-text">
         <span class="row-label">Phone</span>
         <span class="row-value"><a href="tel:+63287228260">Trunkline: +63 2 8722 8260</a></span>
-        <span class="row-value"><a href="tel:+639176270875">Mobile: +63 917 627 0875</a></span>
+        <span class="row-value"><a href="tel:+639176270875">Mobile: +63 917 541 2107</a></span>
       </div>
     </div>
 
@@ -362,6 +422,7 @@
 </footer>
 
 <script src="js/slider.js" defer></script>
+<script src="js/cta-slider.js" defer></script>
 <script src="js/nav.js" defer></script>
 </body>
 </html>
