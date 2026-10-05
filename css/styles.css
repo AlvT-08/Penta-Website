@@ -20,10 +20,95 @@ ul {
     list-style-type: none;
 }
 
+:root {
+    --ease-standard: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
 body {
     padding-top: 0;
     overflow-x: hidden;
-    font-family: 'Montserrat', sans-serif;  
+    font-family: 'Montserrat', sans-serif;
+    animation: fadeInPage 0.55s var(--ease-standard) both;
+}
+
+@keyframes fadeInPage {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.nav-bar,
+.mega-menu,
+.nav-item,
+.mega-col a,
+.logo,
+.hero,
+.what,
+.brands-section,
+.cta,
+.about-wrapper,
+.mission-wrapper,
+.milestones-section,
+.products-sidebar,
+.products-main,
+.projects-main,
+.product-card,
+.project-card,
+.box-wrapper,
+.brand-wrapper,
+.contact-popup,
+.contact-row,
+.social-icon,
+footer {
+    animation: fadeInUp 0.5s var(--ease-standard) both;
+}
+
+.nav-bar,
+.nav-item,
+.mega-col a,
+.logo,
+.box-wrapper,
+.brand-wrapper,
+.product-card,
+.project-card,
+.social-icon,
+.contact-row,
+button,
+.arrow-btn,
+.view-button,
+.back-to-top {
+    transition: transform 0.25s var(--ease-standard), box-shadow 0.25s var(--ease-standard), filter 0.25s var(--ease-standard), background-color 0.25s var(--ease-standard), color 0.25s var(--ease-standard), opacity 0.25s var(--ease-standard);
+}
+
+.logo:hover,
+.nav-item:hover,
+.mega-col a:hover,
+.box-wrapper:hover,
+.brand-wrapper:hover,
+.product-card:hover,
+.project-card:hover,
+.social-icon:hover,
+.contact-row:hover,
+button:hover,
+.arrow-btn:hover,
+.view-button:hover,
+.back-to-top:hover {
+    transform: translateY(-4px);
+    filter: brightness(1.02);
 }
 
 .products-page::before {
@@ -1209,9 +1294,13 @@ button:hover {
     flex-direction: column;
     gap: 6px;
     margin-top: 6px;
-    margin-left: 14px;
-    padding-left: 12px;
+    margin-left: 16px;
+    padding-left: 14px;
     border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-item > .sidebar-link {
+    padding-left: 8px;
 }
 
 .sidebar-sub li a {
@@ -1442,34 +1531,55 @@ button:hover {
 
 /* PDF Viewer */
 .pdf-overlay {
-    display: none;
     position: fixed;
     inset: 0;
-    background: rgba(0,0,0,0.6);
-    z-index: 1000;
+    display: flex;
     align-items: center;
     justify-content: center;
+    background: rgba(3, 10, 17, 0.7);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.28s ease, visibility 0.28s ease;
 }
+
 .pdf-overlay.open {
-    display: flex;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
 }
+
 .pdf-popup {
-    background: #fff;
-    border-radius: 10px;
-    padding: 20px;
-    max-width: 90vw;
+    background: rgba(255, 255, 255, 0.96);
+    border-radius: 22px;
+    padding: 26px 22px 18px;
+    width: min(90vw, 1080px);
     max-height: 90vh;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.28);
+    border: 1px solid rgba(7, 102, 158, 0.12);
+    transform: scale(0.96) translateY(18px);
+    opacity: 0;
+    transition: transform 0.32s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.32s ease;
 }
+
+.pdf-overlay.open .pdf-popup {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+}
+
 .pdf-popup .close-btn {
     position: absolute;
     top: 16px;
     right: 16px;
-    width: 32px;
-    height: 32px;
+    width: 36px;
+    height: 36px;
     border-radius: 50%;
     background: #07669e;
     border: none;
@@ -1479,29 +1589,62 @@ button:hover {
     cursor: pointer;
     padding: 0;
     margin: 0;
+    box-shadow: 0 6px 18px rgba(7, 102, 158, 0.28);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.pdf-popup .close-btn:hover {
+    background: #044165;
+    transform: rotate(90deg);
 }
 
 .pdf-canvas-wrap {
-    overflow: visible;
+    width: 100%;
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 20px 10px 8px;
+    background: linear-gradient(180deg, #f5f9fb 0%, #edf3f7 100%);
+    border-radius: 16px;
+    border: 1px solid rgba(7, 102, 158, 0.08);
+    min-height: 60vh;
 }
+
 #pdfCanvas {
     display: block;
     max-width: 100%;
-    max-height: 100%;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    max-height: 72vh;
+    border-radius: 10px;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+    background: #fff;
 }
+
 .pdf-controls {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 16px;
-    margin-top: 12px;
+    margin-top: 14px;
+    width: min(100%, 360px);
+    background: #f4f8fb;
+    border: 1px solid rgba(7, 102, 158, 0.08);
+    border-radius: 999px;
+    padding: 8px 12px;
 }
+
+#pdfPageNum {
+    min-width: 120px;
+    text-align: center;
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: #0a2238;
+    letter-spacing: 0.02em;
+}
+
 .pdf-controls button {
-    width: 37px;
-    height: 37px;
+    width: 36px;
+    height: 36px;
     border-radius: 50%;
     background-color: #07669e;
     border: none;
@@ -1509,13 +1652,20 @@ button:hover {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.2s ease, transform 0.2s ease;
     padding: 0;
     margin: 0;
 }
 
 .pdf-controls button:hover {
     background-color: #044165;
+    transform: translateY(-1px);
+}
+
+.pdf-controls button:disabled {
+    opacity: 0.45;
+    cursor: default;
+    transform: none;
 }
 
 .pdf-controls button:disabled {
@@ -1867,15 +2017,36 @@ button:hover {
 }
 
 .projects-section h2 {
-    font-size: 1.6rem;
+    font-size: 1.75rem;
     font-weight: 800;
     color: #111;
-    margin-bottom: 20px;
+    margin: 0 0 30px;
+    padding: 0 0 14px;
+    border-bottom: 3px solid #07669e;
 }
 
 .projects-section {
     margin-bottom: 50px;
     scroll-margin-top: 120px;
+}
+
+.projects-category {
+    margin-bottom: 38px;
+    scroll-margin-top: 120px;
+}
+
+.projects-category > h3 {
+    width: fit-content;
+    max-width: 100%;
+    color: #075b89;
+    font-size: 1.05rem;
+    font-weight: 800;
+    line-height: 1.4;
+    margin: 0 0 22px;
+    padding: 9px 14px;
+    border-left: 4px solid #07669e;
+    background: #edf4f7;
+    border-radius: 0 6px 6px 0;
 }
 
 .project-card {
@@ -1934,4 +2105,16 @@ button:hover {
 @keyframes skeleton-shimmer {
     0%   { background-position: 100% 50%; }
     100% { background-position: 0 50%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
 }

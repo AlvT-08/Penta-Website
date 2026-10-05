@@ -6,12 +6,27 @@ let currentPage = 1;
 let currentRenderTask = null;
 
 const overlay = document.getElementById('pdfOverlay');
+const popup = document.querySelector('.pdf-popup');
 const canvas = document.getElementById('pdfCanvas');
 const ctx = canvas.getContext('2d');
 const pageNumEl = document.getElementById('pdfPageNum');
 const prevBtn = document.getElementById('pdfPrev');
 const nextBtn = document.getElementById('pdfNext');
 const closeBtn = document.getElementById('closePdf');
+
+function setPdfViewerState(isOpen) {
+    overlay.classList.toggle('open', isOpen);
+    overlay.style.visibility = isOpen ? 'visible' : 'hidden';
+    overlay.style.opacity = isOpen ? '1' : '0';
+    overlay.style.pointerEvents = isOpen ? 'auto' : 'none';
+
+    if (popup) {
+        popup.style.opacity = isOpen ? '1' : '0';
+        popup.style.transform = isOpen ? 'scale(1) translateY(0)' : 'scale(0.96) translateY(18px)';
+    }
+
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+}
 
 const pdfDocCache = new Map();
 function getPdfDoc(url) {
@@ -51,14 +66,14 @@ function openPdf(url) {
         pdfDoc = doc;
         currentPage = 1;
         renderPage(currentPage);
-        overlay.classList.add('open');
+        requestAnimationFrame(() => setPdfViewerState(true));
     }).catch(err => console.error('Error loading PDF:', err));
 }
 
 prevBtn.addEventListener('click', () => { if (currentPage > 1) { currentPage--; renderPage(currentPage); } });
-nextBtn.addEventListener('click', () => { if (currentPage < pdfDoc.numPages) { currentPage++; renderPage(currentPage); } });
-closeBtn.addEventListener('click', () => overlay.classList.remove('open'));
-overlay.addEventListener('click', (e) => { if (e.target === overlay) overlay.classList.remove('open'); });
+nextBtn.addEventListener('click', () => { if (pdfDoc && currentPage < pdfDoc.numPages) { currentPage++; renderPage(currentPage); } });
+closeBtn.addEventListener('click', () => setPdfViewerState(false));
+overlay.addEventListener('click', (e) => { if (e.target === overlay) setPdfViewerState(false); });
 
 let resizeTimeout;
 window.addEventListener('resize', () => {
