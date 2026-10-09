@@ -1238,6 +1238,17 @@ button:hover {
     overflow-y: auto;
 }
 
+.nav-bar,
+.products-sidebar {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.nav-bar::-webkit-scrollbar,
+.products-sidebar::-webkit-scrollbar {
+    display: none;
+}
+
 .products-sidebar h2 {
     color: white;
     font-size: 1.1rem;
@@ -1822,6 +1833,7 @@ button:hover {
     }
     .nav-top { height: 60px; }
     .logo img { max-width: 52px; }
+    .nav-list > .nav-item:last-child { margin-bottom: 8px; }
 
     .hero {
         height: auto;
@@ -1856,9 +1868,34 @@ button:hover {
         width: 100% !important;
         padding: 20px 14px;
     }
+    .brand-wrapper:hover {
+        max-height: none;
+        transition: none;
+    }
     .brand-wrapper p,
     .brand-wrapper .brand-footer {
         opacity: 1;
+        transition: none;
+    }
+    .brand-wrapper:hover p,
+    .brand-wrapper:hover .brand-footer {
+        opacity: 1;
+        transition: none;
+    }
+    .alfa-laval-footer {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+    .alfa-laval-action {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+    .alfa-laval-action h2 {
+        font-size: 0.75rem;
+        text-align: center;
     }
 
     .milestones-section { padding: 40px 20px; }
@@ -1948,8 +1985,9 @@ button:hover {
         position: relative;
         right: auto;
         bottom: auto;
-        height: 200px;
+        height: 230px;
         width: 100%;
+        max-width: none;
         margin-top: 20px;
         display: flex;
         align-items: center;
