@@ -1,13 +1,13 @@
 const milestones = [
-    { year: "1985", label: "Founded", desc: "PENTA ENGINEERING AND MACHINERIES INC. began as a sole proprietorship in October 1985, focusing primarily on pump servicing and repairs for the building and manufacturing industries." },
+    { year: "1985", label: "Founded", desc: "PENTA ENGINEERING AND MACHINERIES INC. began in October 1985, a sole proprietorship, with a primary focus on the service and repair of pumps for the building trade and manufacturing industries." },
     { year: "1989", label: "Incorporation", desc: "PENTA ENGINEERING AND MACHINERIES INC. was formally incorporated in September 1989." },
-    { year: "1989", label: "PACO, FAIRBANKS, & EIM", desc: "Penta secured dealerships for PACO pumps in the Metro Manila building trade, FAIRBANKS MORSE fire pumps (now FAIRBANKS NIJHUIS), and EIM submersible pumps." },
-    { year: "1991", label: "Exclusive Distributorship of PACO and EVAPCO", desc: "Penta became the exclusive distributor of PACO pumps and EVAPCO evaporative cooling equipment." },
-    { year: "1992", label: "Exclusive Distributorship of EIM", desc: "Penta became the exclusive distributor of EIM pumps." },
-    { year: "1996", label: "AMTROL & ALLEN BRADLEY", desc: "Penta added AMTROL tanks and ALLEN BRADLEY controls to its product range." },
-    { year: "2006", label: "IMI TA & GRUNDFOS", desc: "Penta became the exclusive distributor of TOUR & ANDERSSON \"TA\" balancing valves (now IMI TA) and a dealer for GRUNDFOS pumps." },
-    { year: "2011", label: "NEMA", desc: "Penta became a dealer for NEMA expansion vessels and hydropneumatic tanks." },
-    { year: "2025", label: "ALFA LAVAL", desc: "Penta became a dealer for ALFA LAVAL gasketed plate heat exchangers (GPHEs)." },
+    { year: "1989", label: "PACO, FAIRBANKS, & EIM", desc: "Dealership of PACO pumps in the Metro Manila building trade market, Dealership of FAIRBANKS MORSE fire pump (Currently FAIRBANKS NIJHUIS), <br>Dealership of EIM submersible pumps." },
+    { year: "1991", label: "Exclusive Distributorship of PACO, and EVAPCO", desc: "Exclusive distributorship of PACO pumps. <br>Exclusive distributorship of EVAPCO evaporative cooling equipment." },
+    { year: "1992", label: "Exclusive Distributorship of EIM", desc: "Exclusive distributorship of EIM pumps." },
+    { year: "1996", label: "AMTROL & ALLEN BRADLEY", desc: "Dealership of AMTROL tanks. <br>Dealership of ALLEN BRADLEY controls." },
+    { year: "2006", label: "IMI TA & GRUNDFOS", desc: "Exclusive distributorship of TOUR & ANDERSSON \"TA\" balancing valves (now IMI TA). <br>Dealership of GRUNDFOS pumps" },
+    { year: "2011", label: "NEMA", desc: "Dealership of NEMA expansion vessel and hydropneumatic tanks." },
+    { year: "2025", label: "ALFA LAVAL", desc: "Dealership of ALFA LAVAL Gasketed Plate Heat Exchanger (GPHE)." },
 ];
 
 const ITEM_W = 220;
