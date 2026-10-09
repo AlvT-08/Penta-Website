@@ -731,6 +731,13 @@ button:hover {
     transform: none;
 }
 
+.alfa-laval-action .view-button {
+    display: inline-flex;
+    flex: 0 0 35px;
+    align-items: center;
+    justify-content: center;
+}
+
 /* Slider */
 .brands-slider-wrapper {
     overflow: hidden;
