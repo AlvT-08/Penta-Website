@@ -639,6 +639,8 @@ button:hover {
     font-size: 5.5rem;
     font-weight: 1000;
     letter-spacing: 3px;
+    margin-left: 27px;
+    text-align: left;
 }
 
 .brands-section p {
@@ -1337,6 +1339,7 @@ button:hover {
 .sidebar-item.section-contains-active > .sidebar-link {
     color: white;
     font-weight: 700;
+    transition: none;
 }
 
 .sidebar-item {
@@ -1878,6 +1881,7 @@ button:hover {
 
     .brands-section { height: auto; padding: 60px 0 80px; overflow: visible; }
     .brands-slider-wrapper { padding: 0 16px; overflow: visible; }
+    .brands-section h1 { margin-left: 16px; }
     .slider-arrows { display: none; }
 
     .brands-container {
@@ -1905,6 +1909,7 @@ button:hover {
         opacity: 1;
         transition: none;
     }
+    .brands-section .brand-wrapper p { text-align: left; }
     .brand-wrapper:hover p,
     .brand-wrapper:hover .brand-footer {
         opacity: 1;

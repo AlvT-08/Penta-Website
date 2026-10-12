@@ -38,16 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
         else activeSection.link.closest('.sidebar-item')?.classList.add('section-contains-active');
     }
 
-    let ticking = false;
-    window.addEventListener('scroll', () => {
-        if (ticking) return;
-        ticking = true;
-        window.requestAnimationFrame(() => {
-            updateActiveSection();
-            ticking = false;
-        });
-    }, { passive: true });
-
+    window.addEventListener('scroll', updateActiveSection, { passive: true });
     window.addEventListener('resize', updateActiveSection);
     window.addEventListener('hashchange', updateActiveSection);
     updateActiveSection();
