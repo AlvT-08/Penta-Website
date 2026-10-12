@@ -695,6 +695,12 @@ button:hover {
     flex-shrink: 0;
 }
 
+.brand-wrapper img.alfa-laval-logo {
+    width: 75%;
+    height: 160px;
+    align-self: center;
+}
+
 .brand-wrapper p,
 .brand-wrapper .brand-footer {
     color: #044165;
@@ -1899,6 +1905,10 @@ button:hover {
         max-width: none !important;
         width: 100% !important;
         padding: 20px 14px;
+    }
+    .brand-wrapper img.alfa-laval-logo {
+        width: 90%;
+        height: 180px;
     }
     .brand-wrapper:hover {
         max-height: none;
