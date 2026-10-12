@@ -1332,6 +1332,13 @@ button:hover {
     color: white;
 }
 
+.sidebar-brands a[aria-current="location"],
+.sidebar-sub a[aria-current="location"],
+.sidebar-item.section-contains-active > .sidebar-link {
+    color: white;
+    font-weight: 700;
+}
+
 .sidebar-item {
     display: flex;
     flex-direction: column;
@@ -1399,6 +1406,20 @@ button:hover {
     object-fit: cover;
     border-radius: 16px;
     pointer-events: none;
+}
+
+.eim-brochure-card,
+.eim-brochure-card:hover {
+    background-color: #fff;
+}
+
+.eim-brochure-card .product-card-thumb {
+    object-fit: contain;
+    clip-path: inset(2px 2px 2px 5px);
+}
+
+.eim-brochure-card:nth-child(2) .product-card-thumb {
+    transform: translateY(5px);
 }
 
 /* Contact */
