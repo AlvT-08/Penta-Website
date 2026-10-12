@@ -11,6 +11,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (!sections.length) return;
 
+    let activeLink = null;
+
     function updateActiveSection() {
         const activationLine = window.scrollY + Math.min(180, window.innerHeight * 0.25);
         let activeSection = sections[0];
@@ -20,6 +22,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 activeSection = section;
             }
         }
+
+        if (activeSection.link === activeLink) return;
+        activeLink = activeSection.link;
 
         sections.forEach(({ link }) => link.removeAttribute('aria-current'));
         activeSection.link.setAttribute('aria-current', 'location');
