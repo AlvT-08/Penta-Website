@@ -1,6 +1,6 @@
 const milestones = [
-    { year: "1985", label: "Founded", desc: "PENTA ENGINEERING AND MACHINERIES INC. began in October 1985, a sole proprietorship, with a primary focus on the service and repair of pumps for the building trade and manufacturing industries." },
-    { year: "1989", label: "Incorporation", desc: "PENTA ENGINEERING AND MACHINERIES INC. was formally incorporated in September 1989." },
+    { year: "1985", label: "Founded", desc: "PENTA ENGINEERING MACHINERIES began in October 1985, a sole proprietorship, with a primary focus on the service and repair of pumps for the building trade and manufacturing industries." },
+    { year: "1989", label: "Incorporation", desc: "PENTA ENGINEERING MACHINERIES was formally incorporated in September 1989." },
     { year: "1989", label: "PACO, FAIRBANKS, & EIM", desc: "Dealership of PACO pumps in the Metro Manila building trade market, Dealership of FAIRBANKS MORSE fire pump (Currently FAIRBANKS NIJHUIS), <br>Dealership of EIM submersible pumps." },
     { year: "1991", label: "Exclusive Distributorship of PACO, and EVAPCO", desc: "Exclusive distributorship of PACO pumps. <br>Exclusive distributorship of EVAPCO evaporative cooling equipment." },
     { year: "1992", label: "Exclusive Distributorship of EIM", desc: "Exclusive distributorship of EIM pumps." },
@@ -20,7 +20,7 @@ const prevBtn = document.getElementById('prev');
 const nextBtn = document.getElementById('next');
 
 const boldTerms = [
-    'PENTA ENGINEERING AND MACHINERIES INC.',
+    'PENTA ENGINEERING MACHINERIES',
     'PACO',
     'FAIRBANKS MORSE',
     'FAIRBANKS NIJHUIS',
